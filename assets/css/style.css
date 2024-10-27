@@ -1,5 +1,83 @@
-/*Estilos ID*/
+/*All*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
 
-/*Estilos Class*/
+body{
+    height: 1280px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
-/*Estilos TAG*/
+/*Section Header*/
+header{
+    height: 104px;
+    width: 100%;
+    background-color: #d40f0f;
+} 
+
+header h1{
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    text-decoration: solid;
+    font: bold;
+    font-size: 3em;
+}
+
+header nav{
+    height: 40px;
+    width: 100%;
+    background-color: #111111;
+
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: 400;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px 20px;
+}
+
+/*Section Main*/
+main{
+    height: 350px;
+    width: 100%;
+    margin: 20px 20px 30px 30px;
+    background-color: rgb(253, 253, 253);
+}
+
+main h1{
+    font-size: 40px;
+    color: #fa4242;
+}
+
+main h1 span{
+
+    display: flex;
+    align-items: left;
+    color: #111111;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+main p{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+
+#logo{
+    display: flex;
+    height: 175px;
+    width: 450px;
+}
+
+#logoPoke{
+    display: flex;
+    height: 200px;
+    width: 200px;
+}
