@@ -1,0 +1,106 @@
+/*All*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+/* ****************************************************************** */
+
+/* Section Header */
+    /* Title Red Princ */
+    header{
+        height: 103px;
+        width: 100%;
+        background-color: #b11d1d;
+        position: fixed;
+        left: 0;
+        top: 0;
+    } 
+    header a h1{
+        color: whitesmoke;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    header a h1:hover{
+        cursor: pointer;
+        color: #111111;
+        transition: 0.4s;
+    }
+
+    /* Menu Title */
+    header nav {
+        height: 40px;
+        width: 100%;
+        background-color: #111111;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 20px;
+    }
+    header nav a{
+        color: rgb(221, 218, 218);
+        font-size: 1.2em;
+        font-weight: 500;
+        font-style: italic;
+    }     
+    header nav a:hover{
+        cursor: pointer;
+        color: #f86969;
+        transition: 0.4s;
+    }
+
+/* ****************************************************************** */
+
+/* Section Footer */
+    /* Alinhamento */
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: #111111;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div{
+        margin: 10px 100px 10px 100px
+    }
+
+    /* FormatText */
+    footer div h3,p{
+        color: aliceblue;
+        font-size: 0.9em;
+        font-weight: 470;
+    }
+    footer div h3{
+        color: #f86969;
+        font-size: 1.1em;
+        font-weight: 650;
+        margin-bottom: 5px;
+    }
+    footer span{
+        font-size: 1.0em;
+        font-weight: 600;
+    }

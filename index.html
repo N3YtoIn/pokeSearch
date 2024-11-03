@@ -4,52 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéSearch - Guia Pokémon</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <script src="/js/loadHtml.js" type="module" defer></script>
 </head>
 
 <body>
-    <!--Secao do Header-->
-    <header>
-        <h1>PokéSearch</h1>
-        <nav>
-            <div>Pokémons</div>
-            <div>Itens</div>
-            <div>Contatos</div>
-            <div>Sobre o Criador</div>
-        </nav>
-    </header>
+    <!-- Section Header Import -->
+    <div id="header"></div>
 
     <!--Secao do Main-->
     <main>
         <!--Tela Inicial-->
         <section id="inicial">
-            <div><h1>Bem-Vindo!!! <span>Vamos começar sua aventura Pokémon.</span></h1>
-
-            <p>Escolha uma das opções acima e faça sua pesquisa no PokéSearch</p></div>
-
             <div>
-                <figure>
-                    <img id="logo" src="assets/imgs/logoPoke.png" alt="Logs" title="LogoPokemon">
-
-                    <img id="logoPoke" src="assets/imgs/Pokebola.png" alt="Logs" title="LogoPokebola">
-                </figure>
+                <h1>Bem-Vindo!!! <span>Vamos começar sua aventura Pokémon.</span></h1>
+                <p>Escolha uma das opções acima e faça sua pesquisa no PokéSearch</p>
             </div>
+            <div>   
+            <figure>
+                <img src="imgs/Pokebola.png" alt="PokeBola" title="Pokébola Logo" id="pokebola">
+            </figure>
+        </div>
         </section>
     </main>
 
-    <!--Secao do Footer-->
-    <footer>
-        <div id="direitos">
-            <h3>Informações Importantes</h3>
-            <p>Todos os direitos reservados</p>
-            <p>Projeto inspirado na Obra de Satoshi Tajiri criador de Pokémon</p>
-        </div>
+    <!-- Section Footer Import -->
+    <div id="footer"></div>
 
-        <div id="contato">
-            <h3>Contatos</h3>
-            <p><span>Telefone:</span> (11) 94313-3947</p>
-            <p><span>E-mail:</span> nathanalmeidabrito@gmail.com</p>
-        </div>
-    </footer>
 </body>
 </html>
