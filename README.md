@@ -9,3 +9,5 @@ Projeto sendo desenvolvido com as experiências adquiridas nas aulas de DesignWe
 **Faculdade UniFecaf - Taboão da Serra / SP**
 
 **Professor Marcel**
+
+**Link API:**  https://pokeapi.co
