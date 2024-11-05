@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéSearch - Pokémons</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/pokemon.css" type="text/css">
     <link rel="icon" href="/imgs/pokeIcon.png" type="imgs/png">
     <script src="../js/loadHtml.js" type="module" defer></script>
+    <script src="../js/carregarDados.js" type="module" defer></script>
 </head>
 
 <body>
@@ -16,23 +18,35 @@
     <!-- Section Main -->
 
         <!-- Filtro -->
-         <div id="Filter">
-            <h2>Buscar:</h2>
-            <input type="search" name="Filter" id="S">
-        </div>
+    <main>
+        <section id="filter">
+            <div>
+                <h2>Buscar:</h2>
+                <input type="search" name="filterSearch" id="input-filter" placeholder="Digite o nome de um Pokémon...">
+                <h3 id="input-reset">Reset</h3>
+                <h3 id="input-search">Search</h3>
+            </div>
+        </section>    
 
         <!-- Cards -->
-         <div id="Cards">
-            <h2>Pokémon</h2>
-            <figure>
-                <img src="" alt="">
-                <img src="" alt="">
-            </figure>
-            <p>Type</p>
-            <p>HP</p>
-            <p>Attack</p>
-            <p>Defense</p>
-         </div>
+        <section id="pokemons">
+            <div class="produtos" id="cardPokemon">
+                <!-- 
+                <div class="caixa_produto">
+                    <h2 class="caixa_titulo">
+                        Nome do produto
+                    </h2>
+                    <figure class="caixa_imagem">
+                        <img src="">
+                    </figure>
+                    <div class="caixa_texto">
+                        <p>
+                            Type:
+                        </p>
+                    </div>
+                </div> 
+                 -->
+            </div>
 
     <!-- Section Footer Import -->
      <div id="footer"></div>
