@@ -78,21 +78,33 @@ main{
 
 .caixa_titulo {
     font-family: sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    text-shadow: 3px 2px 1px #888888;
+    font-size: 22px;
+    color: #e02020;
+    text-shadow: 2px 2px 1px #aca9a9;
     margin: 10px 0;
 }  
 .caixa_produto {
-    border: 1px solid #ccc;
+    border: 2px solid #636262;
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    width: 150px;
-    background-color: #f8f8f8;
+    width: 200px;
+    background-color: #f3f3f3;
+    box-shadow: 5px 5px 2px #636262;
+}
+
+.caixa_produto:hover{
+    cursor: none;
+    zoom: 125%;
 }
 
 .caixa_produto img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
+}
+
+.caixa_texto, .typeElement{
+    color: #111111;
+    font-size: 1.1em;
+    font-weight: 500;
 }

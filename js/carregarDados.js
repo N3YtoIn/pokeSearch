@@ -5,12 +5,13 @@
  * Versão: 1.1
  *****************************************************************************/
 
+
 let allPokemonData = [];
 
 // Função para criar e exibir o card de cada Pokémon
 const setCreateCard = function(pokemonData) {
     // Recebe o elemento principal do HTML para colocar os cards
-    let divCardPokemon = document.getElementById('cardPokemon');
+    let divCardPokemon = document.getElementById('cardPokemon');    
 
     // Cria os elementos HTML dinamicamente
     let divCaixaProduto = document.createElement('div');
@@ -19,10 +20,13 @@ const setCreateCard = function(pokemonData) {
     let img = document.createElement('img');
     let divCaixaTexto = document.createElement('div');
     let pCaixaTexto = document.createElement('p');
+    let divType = document.createElement('div');
+    let pType   =   document.createElement('p');
 
     // Define o conteúdo do card
     let textoTitulo = document.createTextNode(pokemonData.name);
     let textoParagrafo = document.createTextNode(`ID: ${pokemonData.id}`);
+    //let textoElement = document.createTextNode(`Type: ${pokemonData.types[']}`);
 
     // Define os atributos para estilização
     divCaixaProduto.setAttribute('class', 'caixa_produto');
@@ -32,6 +36,7 @@ const setCreateCard = function(pokemonData) {
     img.setAttribute('alt', pokemonData.name);
     img.setAttribute('title', pokemonData.name);
     pCaixaTexto.setAttribute('class', 'caixa_texto');
+    //pType.setAttribute('class','typeElement');
 
     // Associa os elementos pais e filhos
     divCardPokemon.appendChild(divCaixaProduto);
@@ -42,6 +47,9 @@ const setCreateCard = function(pokemonData) {
     divCaixaProduto.appendChild(divCaixaTexto);
     divCaixaTexto.appendChild(pCaixaTexto);
     pCaixaTexto.appendChild(textoParagrafo);
+    //divCaixaProduto.appendChild(divType);
+    //divType.appendChild(pType);
+    //pType.appendChild(textoElement);
 }
 
 // Função para obter os dados dos Pokémon da API
